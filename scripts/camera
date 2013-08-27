@@ -17,7 +17,7 @@
 case "$1" in
   start)
     echo "Starting camera"
-    su pi -c 'cd /home/pi/dev/nitrogen/camera && nohup nodemon camera.js > runlog 2>&1 &' 
+    su pi -c 'cd /home/pi/dev/nitrogen/camera && forever start -o runlog -e runlog camera.js' 
     ;;
   stop)
     echo "Stopping camera"
