@@ -9,9 +9,9 @@
   "private": "true",
   "dependencies": {
       "async": "*",
-      "nitrogen": "~0.0.108",
-      "nitrogen-foscam": "*",
-      "opencv-cameramanager": "*"
+      "nitrogen": ">=0.1.8",
+      "nitrogen-foscam": "~0.1",
+      "opencv-cameramanager": "~0.1"
   },
   "devDependencies": {
       "mocha": "1.x"
