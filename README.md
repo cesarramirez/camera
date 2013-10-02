@@ -9,8 +9,11 @@ Camera is a Nitrogen device application that watches a device's message stream a
 3. Run `npm install` 
 4. `node camera.js`
 
-To run this application as a daemon, modify `camera` to point to your installation direct and then copy it to /etc/init.d 
-Rebooting or running `/etc/init.d/camera start` will then start the daemon. 
+## Running camera as a daemon
+
+1. To run this application as a daemon, modify `scripts/camera` to point to your installation directory and then copy it to /etc/init.d 
+2. Run `sudo update-rc.d camera defaults` so that it starts at boot.
+2. Rebooting or running `/etc/init.d/camera start` will then start the daemon. 
 
 ## Other Projects
 
