@@ -9,13 +9,16 @@ Camera is a Nitrogen device application that watches a device's message stream a
 3. Run `npm install` 
 4. `node camera.js`
 
-To run this application as a daemon, modify `camera` to point to your installation direct and then copy it to /etc/init.d 
-Rebooting or running `/etc/init.d/camera start` will then start the daemon. 
+## Running camera as a daemon
+
+1. To run this application as a daemon, modify `scripts/camera` to point to your installation directory and then copy it to /etc/init.d 
+2. Run `sudo update-rc.d camera defaults` so that it starts at boot.
+2. Rebooting or running `/etc/init.d/camera start` will then start the daemon. 
 
 ## Other Projects
 
 Nitrogen has three other projects that you should have a look at as well.
 
-1. [service](https://github.com/magentajs/service): The core Nitrogen service responsible for managing users, devices, and messaging between them.
-2. [client](https://github.com/magentajs/client): The client library for building Nitrogen devices and applications.
-3. [admin](https://github.com/magentajs/admin): An administrative tool for managing the Nitrogen service.
+1. [service](https://github.com/nitrogenjs/service): The core Nitrogen service responsible for managing users, devices, and messaging between them.
+2. [client](https://github.com/nitrogenjs/client): The client library for building Nitrogen devices and applications.
+3. [admin](https://github.com/nitrogenjs/admin): An administrative tool for managing the Nitrogen service.
