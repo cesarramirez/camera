@@ -1,7 +1,7 @@
 var async  = require('async')
   , config = require('./config')
   , nitrogen = require('nitrogen')
-  , OpenCVCameraManager = require('opencv-cameramanager');
+  , OpenCVCameraManager = require('nitrogen-opencv-camera');
 
 var service = new nitrogen.Service(config);
 

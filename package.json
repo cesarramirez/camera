@@ -1,19 +1,21 @@
 {
   "name": "camera",
   "homepage": "https://github.com/nitrogenjs/camera",
-  "repository" : {
-      "type" : "git",
-      "url" : "https://github.com/nitrogenjs/camera.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nitrogenjs/camera.git"
   },
   "version": "0.1.0",
   "private": "true",
   "dependencies": {
-      "async": "*",
-      "nitrogen": ">=0.1.8",
-      "nitrogen-foscam": "~0.1",
-      "opencv-cameramanager": "~0.1"
+    "async": "~0.2.9",
+    "fswebcam": "~0.1.13",
+    "nitrogen": "~0.1.108",
+    "nitrogen-foscam": "~0.1.2",
+    "nitrogen-opencv-camera": "~0.1.1",
+    "raspberrypi-camera": "~0.1.12"
   },
   "devDependencies": {
-      "mocha": "1.x"
+    "mocha": "1.x"
   }
 }
