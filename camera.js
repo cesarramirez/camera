@@ -10,7 +10,7 @@ async.each(config.cameras, function(camera, callback) {
         if (err) { return console.log('failed to connect camera: ' + err); }
 
 	      // startup opencv based camera manager (supports software based motion detection) for this camera. 
-        new OpenCVCameraManager(camera).start(session, function(err, message) {
+        new OpenCVCameraManager(camera).start(session, camera.id, function(err, message) {
             if (err) return session.log.error(JSON.stringify(err));
         });
 
