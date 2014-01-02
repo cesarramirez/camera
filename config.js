@@ -1,23 +1,28 @@
 var nitrogen = require('nitrogen')
-  , FoscamCamera = require('nitrogen-foscam');
+  , ImageSnapCamera = require('nitrogen-imagesnap')
+  , Store = require('nitrogen-leveldb-store');
 
-// This sample connects to a Foscam IP based camera.  There is a simple interface for 
-// implementing a camera driver for other camera types (directly connected via USB etc).  See the implementation
-// in http://github.com/nitrogenjs/foscam for an example.  
+// This sample uses your Mac's camera but there are a number of other camera devices supported.  
+// See the http://github.com/nitrogenjs/devices project for other options (Rasperry Pi camera,
+// Foscam IP camera, etc).
 
-var config = {};
+// By default, run against the hosted Nitrogen service in the cloud.  Uncomment the lines below
+// to run against a locally running service.
 
-config.store = new nitrogen.FileStore(config);
+var config = {
+//    host: 'localhost',
+//    http_port: 80,
+//    protocol: 'http'
+};
+
+config.store = new Store(config);
 config.cameras = [
-    new FoscamCamera({
+    new ImageSnapCamera({
         nickname: 'camera',
-         config: {
-            host: '192.168.1.1',
-            port: 80,
-            user: 'admin',
-            password: 'mypass'
-         }
+        name: "My Mac's Camera"
     })
 ];
+
+config.log_levels = ['info', 'warn', 'error'];
 
 module.exports = config;

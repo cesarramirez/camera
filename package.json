@@ -10,7 +10,7 @@
   "dependencies": {
     "async": "~0.2.9",
     "nitrogen": "~0.1.201",
-    "nitrogen-foscam": "~0.1.3",
+    "nitrogen-imagesnap": "~0.1.3",
     "nitrogen-leveldb-store": "~0.1.201",
     "nitrogen-opencv-camera": "~0.1.1"
   },

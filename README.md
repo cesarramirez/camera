@@ -6,6 +6,7 @@ Camera is a Nitrogen device application that watches a device's message stream a
 
 1. Install OpenCV on the device.  OpenCV is used for motion detection camera commands.
 2. Clone this repo onto your target device: `git clone https://github.com/nitrogenjs/camera.git`
+3. Install `imagesnap` on your Mac if you are going to use the default config: `brew install imagesnap`.
 3. Run `npm install` 
 4. `node camera.js`
 
