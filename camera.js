@@ -14,6 +14,7 @@ async.each(config.cameras, function(camera, callback) {
             if (err) return session.log.error(JSON.stringify(err));
         });
 
-        callback();
     });
+
+    return callback();
 });
