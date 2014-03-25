@@ -17,4 +17,6 @@ service.connect(config.camera, function(err, session, camera) {
     new CameraManager(camera).start(session, function(err, message) {
         if (err) return session.log.error(JSON.stringify(err));
     });
+
+    return callback();
 });
