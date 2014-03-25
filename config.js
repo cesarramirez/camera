@@ -1,5 +1,6 @@
 var nitrogen = require('nitrogen')
   , ImageSnapCamera = require('nitrogen-imagesnap')
+  , FSWebcamCamera = require('fswebcam')
   , Store = require('nitrogen-leveldb-store');
 
 // This sample uses your Mac's camera but there are a number of other camera devices supported.  
@@ -11,17 +12,11 @@ var nitrogen = require('nitrogen')
 
 var config = {
 //    host: 'localhost',
-//    http_port: 80,
+//    http_port: 3030,
 //    protocol: 'http'
 };
 
 config.store = new Store(config);
-config.cameras = [
-    new ImageSnapCamera({
-        nickname: 'camera',
-        name: "My Mac's Camera"
-    })
-];
 
 config.log_levels = ['info', 'warn', 'error'];
 
