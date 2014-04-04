@@ -9,10 +9,11 @@
   "private": "true",
   "dependencies": {
     "fswebcam": "*",
-    "nitrogen": "~0.1.201",
-    "nitrogen-imagesnap": "~0.1.3",
+    "nitrogen": "~0.1.230",
+    "nitrogen-camera": "~0.1.15",
+    "nitrogen-imagesnap": "~0.1.16",
     "nitrogen-leveldb-store": "~0.1.201",
-    "nitrogen-opencv-camera": "~0.1.1",
+    "nitrogen-camera": "~0.1.1",
     "mocha": "~1.18.2"
   },
   "devDependencies": {
