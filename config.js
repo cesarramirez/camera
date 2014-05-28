@@ -13,7 +13,8 @@ var nitrogen = require('nitrogen')
 var config = {
 //    host: 'localhost',
 //    http_port: 3030,
-//    protocol: 'http'
+//    protocol: 'http',
+    api_key: process.env.API_KEY
 };
 
 config.store = new Store(config);

@@ -6,7 +6,8 @@ var config = require('./config')
 
 var service = new nitrogen.Service(config);
 
-var camera = new FSWebcamCamera({
+var camera = new ImageSnapCamera({
+    api_key: config.api_key,
     nickname: 'camera',
     name: "Camera"
 });
