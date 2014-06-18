@@ -19,6 +19,6 @@ var config = {
 
 config.store = new Store(config);
 
-config.log_levels = ['info', 'warn', 'error'];
+config.log_levels = ['debug', 'info', 'warn', 'error'];
 
 module.exports = config;

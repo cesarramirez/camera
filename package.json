@@ -8,8 +8,9 @@
   "version": "0.1.0",
   "private": "true",
   "dependencies": {
-    "fswebcam": "*",
-    "nitrogen": "0.1.315",
+    "commandcam": "~0.1.21",
+    "fswebcam": "~0.1.21",
+    "nitrogen": "~0.1.315",
     "nitrogen-camera": "~0.1.15",
     "nitrogen-imagesnap": "~0.1.16",
     "nitrogen-leveldb-store": "~0.1.201",

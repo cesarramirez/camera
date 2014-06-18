@@ -1,12 +1,13 @@
 var config = require('./config')
   , nitrogen = require('nitrogen')
+  , CommandCamCamera = require('commandCam')
   , ImageSnapCamera = require('nitrogen-imagesnap')
   , FSWebcamCamera = require('fswebcam')
   , CameraManager = require('nitrogen-camera');
 
 var service = new nitrogen.Service(config);
 
-var camera = new ImageSnapCamera({
+var camera = new CommandCamCamera({
     api_key: config.api_key,
     nickname: 'camera',
     name: "Camera"
