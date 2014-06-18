@@ -1,6 +1,6 @@
 var config = require('./config')
   , nitrogen = require('nitrogen')
-  , CommandCamCamera = require('commandCam')
+  , CommandCamCamera = require('commandcam')
   , ImageSnapCamera = require('nitrogen-imagesnap')
   , FSWebcamCamera = require('fswebcam')
   , CameraManager = require('nitrogen-camera');
