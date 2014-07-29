@@ -7,7 +7,7 @@ var config = require('./config')
 
 var service = new nitrogen.Service(config);
 
-var config =  {
+var cameraConfig =  {
     api_key: config.api_key,
     nickname: 'camera',
     name: "Camera"
@@ -16,16 +16,17 @@ var config =  {
 var camera;
 switch (process.platform){
     case "darwin":
-        camera = new ImageSnapCamera(config);
+        camera = new ImageSnapCamera(cameraConfig);
         break;
     case "linux":
-        camera = new FSWebcamCamera(config);
+        camera = new FSWebcamCamera(cameraConfig);
         break;
     case "win32":
-        camera = new CommandCamCamera(config);
+        camera = new CommandCamCamera(cameraConfig);
         break;
     default:
-        camera = new ImageSnapCamera(config);
+        console.log('Platform not known, falling back to ImageSnapCamare');
+        camera = new ImageSnapCamera(cameraConfig);
         break;
 }
 
